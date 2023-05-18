@@ -34,6 +34,7 @@
     "jsdom": "^21.1.0",
     "prettier": "^2.7.1",
     "prettier-config-nick": "^1.0.2",
+    "standard": "^17.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.0.0",
     "vitest": "^0.30.1"
@@ -41,7 +42,8 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "./node_modules/standard/eslintrc.json"
     ],
     "plugins": [
       "prettier"
