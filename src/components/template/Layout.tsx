@@ -12,7 +12,7 @@ export const Layout = () => {
   useEffect(() => {
     dispatch(
       setCollections(
-        JSON.parse(localStorage.getItem("tasks")!) || JSON.parse("[]"),
+        JSON.parse(localStorage.getItem("collections")!) || JSON.parse("[]"),
       ),
     )
   }, [])

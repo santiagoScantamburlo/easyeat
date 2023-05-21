@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useAppDispatch, useAppSelector } from "../../app/hooks"
+import { useAppDispatch } from "../../app/hooks"
 import {
   Collection,
   CollectionSlice,
@@ -14,22 +14,20 @@ const CollectionList = ({ collections }: { collections: CollectionSlice }) => {
     name: "",
     foods: [],
   })
-  const collectionState = useAppSelector((state) => state.collections)
   const dispatch = useAppDispatch()
   return (
     <div>
       <h1>Collection List</h1>
       <ul>
         {collections.collections.map((collection, index) => (
-          <>
-            <li key={collection.name + index}>{collection.name}</li>
+          <div key={"coleccion" + collection.name + index}>
+            <li>{collection.name}</li>
             <ul>
-              Comidas
               {collection.foods.map((food, index) => (
                 <li key={"food" + collection.name + index}>{food}</li>
               ))}
             </ul>
-          </>
+          </div>
         ))}
       </ul>
 
