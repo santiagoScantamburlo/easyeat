@@ -1,17 +1,14 @@
 {
-  "name": "vite-template-redux",
+  "name": "easyeat",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "vite",
     "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "vitest",
-    "format": "prettier --write .",
-    "lint": "eslint .",
-    "type-check": "tsc"
+    "test": "vitest"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -33,34 +30,23 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.2.5",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
     "@types/testing-library__jest-dom": "^5.14.5",
-    "@vitejs/plugin-react": "^4.0.0",
-    "eslint": "^8.0.0",
-    "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-prettier": "^4.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "eslint": "^8.41.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
     "jsdom": "^21.1.0",
-    "prettier": "^2.7.1",
-    "prettier-config-nick": "^1.0.2",
-    "standard": "^17.0.0",
-    "typescript": "^5.0.2",
-    "vite": "^4.0.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.2",
     "vitest": "^0.30.1"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "./node_modules/standard/eslintrc.json"
-    ],
-    "plugins": [
-      "prettier"
-    ],
-    "rules": {
-      "prettier/prettier": "error",
-      "react/jsx-no-target-blank": "off"
-    }
-  },
-  "prettier": "prettier-config-nick"
+  }
 }
