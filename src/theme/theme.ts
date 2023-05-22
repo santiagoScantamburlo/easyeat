@@ -219,7 +219,7 @@ export const easyEatTheme = createTheme({
           }
         },
         containedPrimary: {
-          background: '#1226AA',
+          background: '#049C3D',
           ':hover': {
             backgroundColor: 'linear-gradient(270deg, #1226AA 0%, #121A52 103.21%)'
           },
