@@ -233,14 +233,6 @@ export const easyEatTheme = createTheme({
         },
       }
     },
-    MuiPaper: {
-      styleOverrides: {
-        root: {
-          boxShadow: 'none',
-          borderRadius: 0,
-        }
-      }
-    },
     MuiTableCell: {
       styleOverrides: {
         root: {
