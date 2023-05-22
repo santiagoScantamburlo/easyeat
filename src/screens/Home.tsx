@@ -1,4 +1,4 @@
-import DiscoverSection from "../components/molecule/home/DiscoverSection"
+import DiscoverSection from '../components/molecule/home/DiscoverSection'
 
 
 export const Home = () => {
