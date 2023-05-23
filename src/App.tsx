@@ -3,6 +3,7 @@ import './App.css'
 import { Layout } from './components'
 import { publicRoutes } from './router/PublicRoute'
 import { Home } from './screens/Home'
+import Contact from './screens/Contact'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route element={ <Layout /> }>
           <Route path={ publicRoutes.HOME } element={ <Home /> } />
+          <Route path={ publicRoutes.CONTACT } element={ <Contact /> } />
         </Route>
       </Routes>
     </BrowserRouter>
